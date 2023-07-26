@@ -1,0 +1,2 @@
+slf4jLog2=org.apache.dubbo.demo.spi.extension.Slf4jLog2
+log4jLog2=org.apache.dubbo.demo.spi.extension.Log4jLog2

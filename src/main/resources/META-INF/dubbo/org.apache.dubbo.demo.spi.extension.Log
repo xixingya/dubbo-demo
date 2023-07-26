@@ -1,0 +1,1 @@
+slf4jLog=org.apache.dubbo.demo.spi.extension.Slf4jLog
