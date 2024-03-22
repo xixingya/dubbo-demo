@@ -1,0 +1,3 @@
+common=tech.xixing.dubbo.demo.spi.java.CommonService
+common2=tech.xixing.dubbo.demo.spi.java.Common2Service
+common3=tech.xixing.dubbo.demo.spi.java.Common3Service

@@ -1,0 +1,3 @@
+log4j=tech.xixing.dubbo.demo.spi.java.Log4j
+logback=tech.xixing.dubbo.demo.spi.java.Logback
+mylog=tech.xixing.dubbo.demo.spi.java.MyLog
