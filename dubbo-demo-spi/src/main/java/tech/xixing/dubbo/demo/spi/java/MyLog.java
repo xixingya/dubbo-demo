@@ -12,7 +12,7 @@ public class MyLog implements Log {
 
     private Service service;
 
-    public void setCommon(Service service) {
+    public void setService(Service service) {
         this.service = service;
     }
 

@@ -3,7 +3,6 @@ package tech.xixing.dubbo.demo.spi;
 import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.ExtensionLoader;
 import org.junit.jupiter.api.Test;
-import tech.xixing.dubbo.demo.spi.java.CommonService;
 import tech.xixing.dubbo.demo.spi.java.Log;
 import tech.xixing.dubbo.demo.spi.java.Service;
 

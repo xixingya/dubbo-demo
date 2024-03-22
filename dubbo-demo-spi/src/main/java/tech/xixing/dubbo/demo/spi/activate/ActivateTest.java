@@ -15,7 +15,7 @@ public class ActivateTest {
     public static void main(String[] args) {
         URL url = URL.valueOf("dubbo://127.0.0.1:20880");
         ExtensionLoader<Log> extensionLoader = ExtensionLoader.getExtensionLoader(Log.class);
-        List<Log> activateExtensions = extensionLoader.getActivateExtension(url, new String[]{}, "my");
+        List<Log> activateExtensions = extensionLoader.getActivateExtension(url, new String[]{},"my");
         for (Log activateExtension : activateExtensions) {
             activateExtension.log("hello world");
         }

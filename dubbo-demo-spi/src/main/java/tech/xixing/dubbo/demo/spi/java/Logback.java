@@ -7,7 +7,7 @@ import org.apache.dubbo.common.extension.Activate;
  * @author liuzhifei
  * @since 1.0
  */
-@Activate(group = "common",order = 1)
+@Activate(group = "common",order = 3)
 public class Logback implements Log {
 
     @Override
