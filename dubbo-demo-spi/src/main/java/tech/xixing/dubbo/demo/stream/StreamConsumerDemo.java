@@ -33,8 +33,9 @@ public class StreamConsumerDemo {
         // 强制应用级接口订阅
         System.setProperty("dubbo.application.service-discovery.migration", "FORCE_APPLICATION");
         System.setProperty("dubbo.metadata-report.report-metadata", "true");
+        System.setProperty("dubbo.application.serialize-check-status", "DISABLE");
         bootstrap
-                .application(new ApplicationConfig("dubbo-demo-api-consumer"))
+                .application(new ApplicationConfig("dubbo-demo-api-consumer-stream"))
                 .registry(registryConfig)
                 .protocol(new ProtocolConfig(CommonConstants.TRIPLE, -1))
                 .reference(reference)

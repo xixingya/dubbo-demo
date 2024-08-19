@@ -28,12 +28,13 @@ public class StreamProviderDemo {
         service.setRef(new StreamServiceImpl());
         // 上报metadata到远程
         System.setProperty("dubbo.metadata-report.report-metadata", "true");
+        System.setProperty("dubbo.application.serialize-check-status", "DISABLE");
 
         DubboBootstrap bootstrap = DubboBootstrap.getInstance();
         RegistryConfig registryConfig = new RegistryConfig(REGISTRY_URL);
         registryConfig.setRegisterMode("instance");
         bootstrap
-                .application(new ApplicationConfig("dubbo-demo-api-provider1"))
+                .application(new ApplicationConfig("dubbo-demo-api-provider-stream"))
                 .registry(registryConfig)
                 .protocol(new ProtocolConfig(CommonConstants.TRIPLE, -1))
                 .service(service)

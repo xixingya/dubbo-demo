@@ -32,7 +32,7 @@ public class ConsumerDemo {
         // 强制应用级接口订阅
         System.setProperty("dubbo.application.service-discovery.migration", "FORCE_APPLICATION");
         bootstrap
-                .application(new ApplicationConfig("dubbo-demo-api-consumer"))
+                .application(new ApplicationConfig("dubbo-demo-api-consumer222"))
                 .registry(registryConfig)
                 .protocol(new ProtocolConfig(CommonConstants.DUBBO, -1))
                 .reference(reference)
