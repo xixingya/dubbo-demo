@@ -24,6 +24,8 @@ public class ProviderDemo2 {
         ServiceConfig<DemoServiceImpl> service = new ServiceConfig<>();
         service.setInterface(DemoService.class);
         service.setRef(new DemoServiceImpl());
+        // 上报metadata到远程
+        System.setProperty("dubbo.metadata-report.report-metadata", "true");
 
         DubboBootstrap bootstrap = DubboBootstrap.getInstance();
         RegistryConfig registryConfig = new RegistryConfig(REGISTRY_URL);
